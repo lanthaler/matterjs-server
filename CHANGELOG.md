@@ -2,10 +2,9 @@
 
 This page shows a detailed overview of the changes between versions without the need to look into code, especially to see relevant changes while interfaces and features are still in flux.
 
-<!--
-	Placeholder for the next version (at the beginning of the line):
-	## **WORK IN PROGRESS**
--->
+## **WORK IN PROGRESS**
+
+- Enhancement: (@lanthaler) Adds the vendor clusters for the Aqara Led Strip T2 to configure the music sync feature to the custom cluster definitions
 
 ## 1.5.0 (2026-10-20)
 
