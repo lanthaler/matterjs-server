@@ -385,3 +385,25 @@ export class AqaraOccupantLocationCluster {
     @event(0x00, AqaraLocationInfoEvent)
     locationInfo!: AqaraLocationInfoEvent;
 }
+
+// Enum names and values follow the Aqara app's device model (trait definitions), confirmed against firmware 1.0.1.0.
+
+/** {@link AqaraLedStripT2Cluster.musicSyncEffect} values. */
+const enum AqaraMusicSyncEffect {
+    Stretch = 1,
+    Pulse = 2,
+    Dash = 3,
+    Flash = 4,
+}
+
+@cluster(0x115ffc0f)
+export class AqaraLedStripT2Cluster {
+    @attribute(19, bool, writable)
+    musicSyncEnabled?: boolean;
+
+    @attribute(21, enum8, writable)
+    musicSyncEffect?: AqaraMusicSyncEffect;
+
+    @attribute(22, uint8, writable)
+    musicSyncSensitivity?: number;
+}

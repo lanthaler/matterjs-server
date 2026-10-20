@@ -43,6 +43,7 @@ __all__ = [
     "ApplicationBasic",
     "ApplicationLauncher",
     "AqaraAmbientSensingConfigurationCluster",
+    "AqaraLedStripT2Cluster",
     "AqaraOccupantLocationCluster",
     "AqaraRadarSensingUnionCluster",
     "AudioOutput",

@@ -18651,6 +18651,70 @@ export const clusters: Record<number, ClusterDescription> = {
         },
         "features": {}
     },
+    "291503119": {
+        "id": 291503119,
+        "label": "AqaraLedStripT2Cluster",
+        "attributes": {
+            "19": {
+                "id": 19,
+                "cluster_id": 291503119,
+                "label": "MusicSyncEnabled",
+                "type": "Optional[bool]",
+                "writable": true
+            },
+            "21": {
+                "id": 21,
+                "cluster_id": 291503119,
+                "label": "MusicSyncEffect",
+                "type": "Optional[uint8]",
+                "writable": true
+            },
+            "22": {
+                "id": 22,
+                "cluster_id": 291503119,
+                "label": "MusicSyncSensitivity",
+                "type": "Optional[uint8]",
+                "writable": true
+            },
+            "65528": {
+                "id": 65528,
+                "cluster_id": 291503119,
+                "label": "GeneratedCommandList",
+                "type": "List[command-id]",
+                "writable": false
+            },
+            "65529": {
+                "id": 65529,
+                "cluster_id": 291503119,
+                "label": "AcceptedCommandList",
+                "type": "List[command-id]",
+                "writable": false
+            },
+            "65531": {
+                "id": 65531,
+                "cluster_id": 291503119,
+                "label": "AttributeList",
+                "type": "List[attrib-id]",
+                "writable": false
+            },
+            "65532": {
+                "id": 65532,
+                "cluster_id": 291503119,
+                "label": "FeatureMap",
+                "type": "map32",
+                "writable": false
+            },
+            "65533": {
+                "id": 65533,
+                "cluster_id": 291503119,
+                "label": "ClusterRevision",
+                "type": "uint16",
+                "writable": false
+            }
+        },
+        "commands": {},
+        "features": {}
+    },
     "293403649": {
         "id": 293403649,
         "label": "IkeaValveCalibrationCluster",
