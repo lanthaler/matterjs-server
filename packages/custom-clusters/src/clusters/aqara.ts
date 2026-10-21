@@ -398,12 +398,12 @@ const enum AqaraMusicSyncEffect {
 
 @cluster(0x115ffc0f)
 export class AqaraLedStripT2Cluster {
-    @attribute(19, bool, writable)
+    @attribute(0x0013, bool, writable)
     musicSyncEnabled?: boolean;
 
-    @attribute(21, enum8, writable)
+    @attribute(0x0015, enum8, writable)
     musicSyncEffect?: AqaraMusicSyncEffect;
 
-    @attribute(22, uint8, writable)
+    @attribute(0x0016, uint8, writable)
     musicSyncSensitivity?: number;
 }
