@@ -10,6 +10,7 @@ This page shows a detailed overview of the changes between versions without the 
 ## **WORK IN PROGRESS**
 
 - Enhancement: Further optimize the node initialization at startup
+- Enhancement: The TypeScript ws-client accepts an options object with a `logger` (for example a matter.js `Logger`) in place of the WebSocket factory; passing the factory alone still works and the default still writes to `console`. With a logger that hides debug output, logging no longer slows down message handling. Each incoming event is logged once instead of twice
 
 ## 1.5.3 (2026-10-23)
 
