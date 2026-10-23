@@ -147,7 +147,6 @@ async function start() {
         if (legacyData.fabricConfig) {
             parts.push("1 fabric");
             legacyServerData.fabric = legacyData.fabricConfig;
-            logger.debug("Fabric", legacyServerData.fabric);
         }
         if (legacyData.serverFile) {
             const nodeCount = Object.keys(legacyData.serverFile.nodes).length;
@@ -157,7 +156,6 @@ async function start() {
         if (legacyData.certificateAuthorityConfig) {
             parts.push("CA credentials");
             legacyServerData.credentials = legacyData.certificateAuthorityConfig;
-            logger.debug("Credentials", legacyServerData.credentials);
         }
         logger.info(`Found legacy data: ${parts.join(", ")}`);
     }
